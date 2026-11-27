@@ -46,7 +46,7 @@ html, body{
 }
 
 .testo-colonne {
-    column-count: 3;
+    column-count: 4;
     column-gap: 40px;
     column-rule: solid 1px #ccc;
 }
