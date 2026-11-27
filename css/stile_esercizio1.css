@@ -1,0 +1,75 @@
+/* stile_esercizio1.css */
+
+/* stili per debug griglia */
+.row{
+    outline: solid 2px blue;
+}
+[class^="col-"], [class*=" col-"]{
+    outline: solid 2px red;
+}
+
+/* stile pagina */
+
+html, body{
+     font: normal 16px/24px 'IBM Plex Serif', sans-serif;
+}
+
+.logo{
+    width: 100%;
+    min-width: 140px;
+    max-width: 170px;
+}
+
+.nav-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.selected {
+    color: blueviolet;
+}
+
+.testo-colonne {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid 1px #ccc;
+}
+
+.btn-cerca {
+    background: transparent url('../img/search.svg') no-repeat center center; 
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .testo-colonne {
+        column-count: 2;
+    }
+}
+
+@media (max-width:500px) {
+    .testo-colonne {
+        column-count: 1;
+        font-size: 14px;
+    }
+}
